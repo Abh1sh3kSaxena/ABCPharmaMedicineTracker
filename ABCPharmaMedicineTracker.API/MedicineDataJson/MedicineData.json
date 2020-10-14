@@ -2,7 +2,7 @@
   "medicine": [
     {
       "brand": "Brand 1 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "09-09-2025",
       "name": "Drug 1 Demo",
       "price": "10.89",
       "quantity": 8000,
@@ -18,7 +18,7 @@
     },
     {
       "brand": "Brand 3 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "11-09-2025",
       "name": "Drug 3 Demo",
       "price": "10.89",
       "quantity": 29,
@@ -26,7 +26,7 @@
     },
     {
       "brand": "Brand 4 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "04-09-2025",
       "name": "Drug 4 Demo",
       "price": "10.89",
       "quantity": 60,
@@ -34,7 +34,7 @@
     },
     {
       "brand": "Brand 5 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "02-14-2025",
       "name": "Drug 5 Demo",
       "price": "10.89",
       "quantity": 90,
@@ -42,7 +42,7 @@
     },
     {
       "brand": "Brand 6 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "01-31-2025",
       "name": "Drug 6 Demo",
       "price": "10.89",
       "quantity": 10,
@@ -50,7 +50,7 @@
     },
     {
       "brand": "Brand 7 Demo",
-      "expirydate": "14-09-2025",
+      "expirydate": "10-12-2025",
       "name": "Drug 7 Demo",
       "price": "10.89",
       "quantity": 25,
