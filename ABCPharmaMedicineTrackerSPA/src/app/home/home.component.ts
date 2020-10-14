@@ -12,6 +12,7 @@ import {IMedicine, Medicine} from '../model/medicine';
 })
 export class HomeComponent implements AfterViewInit {
 _medicine : Medicine[] = null;
+color : string ;
   constructor(private _medicineService : MedicineDataService) { }
 
   displayedColumns: string[] = ['name','brand','price','quantity','expirydate'];
