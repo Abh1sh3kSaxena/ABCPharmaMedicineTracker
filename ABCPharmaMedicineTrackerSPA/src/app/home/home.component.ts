@@ -22,9 +22,9 @@ _medicine : Medicine[] = null;
 
   async ngAfterViewInit() {
     await this._medicineService.getAllMedicine().then(data =>
-      {this._medicineService = data}).catch(exception => 
+      {this._medicine = data}).catch(exception => 
         {
-this._medicineService = null;
+this._medicine = null;
         });
         this.dataSource = new MatTableDataSource(this._medicine);
         this.dataSource.paginator = this.paginator;
