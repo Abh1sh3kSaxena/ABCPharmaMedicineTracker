@@ -10,7 +10,7 @@
     },
     {
       "brand": "Brand 2 Demo",
-      "expirydate": "10-10-2024",
+      "expirydate": "10-20-2020",
       "name": "Drug 2 Demo",
       "price": "10.89",
       "quantity": 80,
@@ -21,7 +21,7 @@
       "expirydate": "11-09-2025",
       "name": "Drug 3 Demo",
       "price": "10.89",
-      "quantity": 29,
+      "quantity": 9,
       "note": ""
     },
     {
@@ -45,7 +45,7 @@
       "expirydate": "01-31-2025",
       "name": "Drug 6 Demo",
       "price": "10.89",
-      "quantity": 10,
+      "quantity": 9,
       "note": ""
     },
     {

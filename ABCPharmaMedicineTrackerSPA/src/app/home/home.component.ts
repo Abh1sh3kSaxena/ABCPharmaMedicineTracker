@@ -41,4 +41,10 @@ this._medicine = null;
     }
   }
 
+  getDateDiff(date : string): any{
+    var diff = Math.abs(new Date(date).getTime() - new Date().getTime());
+    var diffDays = Math.ceil(diff / (1000 * 3600 * 24)); 
+    return diffDays;
+  }
+
 }
