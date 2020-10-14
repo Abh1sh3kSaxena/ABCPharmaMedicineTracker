@@ -11,7 +11,7 @@ namespace ABCPharmaMedicineTracker.API.DataInterface
     {
         Task<Medicine> GetMedicine(string medicineName);
 
-        Task<ActionResult> AddMedicineDetails(Medicine medicine);
+        void AddMedicineDetails(Medicine medicine);
 
         Task<List<Medicine>> GetAllMedicines();
     }

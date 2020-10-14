@@ -20,9 +20,25 @@ namespace ABCPharmaMedicineTracker.API.Repository
             _dataContext = dataContext;
         }
 
-        public Task<ActionResult> AddMedicineDetails(Medicine medicine)
+        public async void AddMedicineDetails(Medicine medicine)
         {
-            throw NotImplementedException;
+            try
+            {
+                string jsonString = await _dataContext.ReadJsonValue();
+
+                var jsonObj = JObject.Parse(jsonString);
+                var medicineArray = jsonObj.GetValue("medicine") as JArray;
+                var newMedicine = JObject.Parse(JsonToString(medicine));
+                medicineArray.Add(newMedicine);
+
+                jsonObj["medicine"] = medicineArray;
+                string newJsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
+                _dataContext.SaveJsonValue(newJsonResult);
+            }
+            catch(Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<List<Medicine>> GetAllMedicines()
