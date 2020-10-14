@@ -1,0 +1,7 @@
+<div *ngIf = "!error && detail"> 
+<span><h1>Medicine Details for {{detail.name}}</h1></span>
+<span>BRAND : {{detail.brand}}</span>
+<span>PRICE : {{detail.price}}</span>
+<span>NOTES : {{detail.notes}}</span>
+<span>EXPIRY DATE : {{detail.expiryDate | date }}</span>
+</div>

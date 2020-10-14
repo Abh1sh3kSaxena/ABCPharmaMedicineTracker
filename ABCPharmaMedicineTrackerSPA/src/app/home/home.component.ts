@@ -4,6 +4,9 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import {MedicineDataService} from '../Service/medicine-data.service';
 import {IMedicine, Medicine} from '../model/medicine';
+import { RouterModule, Router } from '@angular/router';
+import { Route } from '@angular/compiler/src/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -12,8 +15,10 @@ import {IMedicine, Medicine} from '../model/medicine';
 })
 export class HomeComponent implements AfterViewInit {
 _medicine : Medicine[] = null;
+medicineDetail : BehaviorSubject<Medicine>;
 color : string ;
-  constructor(private _medicineService : MedicineDataService) { }
+  constructor(private _medicineService : MedicineDataService,
+    private _router : Router) { }
 
   displayedColumns: string[] = ['name','brand','price','quantity','expirydate'];
   dataSource:MatTableDataSource<IMedicine>;
@@ -46,5 +51,9 @@ this._medicine = null;
     var diffDays = Math.ceil(diff / (1000 * 3600 * 24)); 
     return diffDays;
   }
-
+  navigateDetail(name : Medicine){
+    this._medicineService.addMedicineDetail(name);
+    this._router.navigate(['/detail',name.name]);
+    
+  }
 }

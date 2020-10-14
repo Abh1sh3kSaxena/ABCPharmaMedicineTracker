@@ -26,6 +26,8 @@ namespace ABCPharmaMedicineTracker.API.Controllers
             return await _medicineRepository.GetAllMedicines();
         }
 
+     
+
         [HttpPost("addmedicine")]
         public void AddMedicine(Medicine medicine)
         {

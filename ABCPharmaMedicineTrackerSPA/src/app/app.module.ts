@@ -9,11 +9,15 @@ import {MaterialModule} from './Shared/material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { MedicineDetailComponent } from './medicine-detail/medicine-detail.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MedicineDetailComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
